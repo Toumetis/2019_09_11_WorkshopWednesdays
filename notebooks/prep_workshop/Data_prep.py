@@ -104,12 +104,21 @@ usage_df = usage_df.sample(frac=1).reset_index(drop=True)
 usage_df.tail(2)
 
 
-# In[14]:
+# In[15]:
 
 
 path = '/Users/elenahensinger/Documents/PROJECTS/2019/09_WorkshopWednesdays_W1/datasets'
 
 usage_df[['12am_8am','8am_2pm','2pm_9pm','9pm_12am']].to_csv(path + '/workshop_data1.csv')
+
+
+# In[17]:
+
+
+path = '/Users/elenahensinger/Documents/PROJECTS/2019/09_WorkshopWednesdays_W1/datasets'
+
+usage_df = pd.read_csv(path + '/workshop_data1.csv', index_col=0)
+usage_df
 
 
 # In[ ]:
