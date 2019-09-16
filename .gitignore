@@ -1,5 +1,7 @@
 /other
 .DS_Store
 .ipynb_checkpoints
-Data_analysis_1.py
-Data_analysis_1.html
+/notebooks/prep_workshop/*.html
+/notebooks/prep_workshop/*.py
+/notebooks/workshop/*.html
+/notebooks/workshop/*.py
